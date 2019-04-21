@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_800"
+        android:elevation="20dp"
+        android:padding="3dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_800">
+
+            <RelativeLayout
+                android:id="@+id/iv_youtube_poster"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:clipToPadding="false"
+                    android:padding="2dp"
+                    android:scrollbars="horizontal" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/ivPlayer"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="175dp"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/grey" />
+
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/tv_year"
+                android:textColor="@color/grey" />
+
+            <TextView
+                android:id="@+id/tv_genre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/tv_time"
+                android:textColor="@color/grey" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_genre"
+                android:layout_marginTop="15dp"
+                android:background="@color/grey" />
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_genre"
+                android:layout_marginTop="75dp"
+                android:background="@color/grey" />
+
+
+            <ImageView
+                android:id="@+id/iw_poster"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:layout_below="@id/view"
+                android:layout_margin="15dp"
+                android:src="@color/grey" />
+
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/iw_poster"
+                android:textColor="@color/white" />
+
+
+            <Button
+                android:id="@+id/bt_add"
+                android:layout_width="450dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/tv_desc"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@id/iw_poster"
+                android:background="@color/blue_500"
+                android:elevation="20dp"
+                android:text="ADD TO WATCHLIST "
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+
+            <ImageView
+                android:id="@+id/iw_start"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/bt_add"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_star" />
+
+            <TextView
+                android:id="@+id/tw_vote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iw_start"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</merge>

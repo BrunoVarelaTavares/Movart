@@ -1,0 +1,216 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_800"
+        android:elevation="10dp">
+        <RelativeLayout
+            android:padding="10dp"
+            android:id="@+id/relLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_image_artists"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:background="@color/gray_800"
+                android:clipToPadding="false"
+                android:padding="2dp"
+                android:scrollbars="horizontal" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:id="@+id/relLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relLayout1">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="italic|bold" />
+
+            <ImageView
+                android:id="@+id/imageViewProfilBackg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_ellipsis" />
+
+
+            <TextView
+                android:id="@+id/tv_know_for"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Biography"
+                android:textStyle="italic|bold"
+                android:textColor="@color/grey"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_know_for"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/iv_poster"
+                android:layout_width="140dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/tv_bio"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/textBorn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_bio"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/iv_poster"
+                android:text="Born:"
+                android:textColor="@color/white"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/tv_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textBorn"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/iv_poster"
+                android:text="12 Apr 1994(age 23 )"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/iv_poster"
+                android:layout_marginTop="7.5dp"
+                android:background="@color/grey" />
+
+
+            <RelativeLayout
+                android:id="@+id/rel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_poster"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/iv_one"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp" />
+
+                <ImageView
+                    android:id="@+id/iv_two"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/iv_one"
+                  />
+
+                <ImageView
+                    android:id="@+id/iv_tree"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/iv_two"
+                    android:scaleType="centerCrop"
+                   />
+
+                <ImageView
+                    android:id="@+id/iv_four"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@id/iv_tree"
+                    android:scaleType="centerCrop"
+                     />
+
+
+                <ImageView
+                    android:id="@+id/iv_more_img_tho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="12dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_ellipsis" />
+
+
+            </RelativeLayout>
+
+
+
+
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_talvez"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/tv_born_date"-->
+            <!--android:layout_marginEnd="10dp"-->
+            <!--android:layout_marginStart="10dp"-->
+            <!--android:layout_marginTop="3dp"-->
+            <!--android:layout_toRightOf="@id/iv_poster"-->
+            <!--android:text=""-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textStyle="italic" />-->
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_marginTop="7.5dp"
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/relLayout2"
+            android:background="@color/grey" />
+
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/view"
+            android:layout_marginTop="5dp"
+            android:background="@color/grey" />
+
+    </RelativeLayout>
+
+</merge>

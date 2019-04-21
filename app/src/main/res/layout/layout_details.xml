@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="3dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/greay_850">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <include layout="@layout/layout_details_top"/>
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:id="@+id/relLayout3"
+            android:layout_below="@+id/relLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/layout_cast_info"/>
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:id="@+id/relLayout4"
+            android:layout_below="@+id/relLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/layout_images_list"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:id="@+id/relLayout5"
+            android:layout_below="@+id/relLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/layout_reviews"/>
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:id="@+id/relLayout6"
+            android:layout_below="@+id/relLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/layout_similar"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:id="@+id/relLayout7"
+            android:layout_below="@+id/relLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/layout_storyline"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:id="@+id/relLayout8"
+            android:layout_below="@+id/relLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/layout_details_more_info"/>
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

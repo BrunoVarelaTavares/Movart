@@ -1,0 +1,74 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_800"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:text="Personal Details "
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/text_born"
+            android:textStyle="bold"
+            android:text="Born"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textStyle="italic"
+            android:id="@+id/tv_details_born_date"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/grey"
+            android:layout_below="@id/text_born"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/text_name"
+            android:textStyle="bold"
+            android:text="Name"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/tv_details_born_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textStyle="italic"
+            android:id="@+id/tv_details_name"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/grey"
+            android:layout_below="@id/text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tv_details_name"
+            android:layout_marginTop="7.5dp"
+            android:background="@color/grey"
+            android:layout_marginBottom="5dp"/>
+
+
+    </RelativeLayout>
+
+</merge>

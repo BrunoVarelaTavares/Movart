@@ -1,0 +1,301 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_800"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:text="Know for "
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="italic" />
+
+        <RelativeLayout
+            android:id="@+id/relOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:id="@+id/relLayout1"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_poster_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/ic_bookmark_one"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="6.7dp"
+                    android:src="@drawable/ic_bookmark"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/ic_add_one"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/iv_poster_one"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/ic_add"
+                    android:visibility="visible" />
+
+
+                <ImageView
+                    android:id="@+id/ic_bookmark_green_one"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="6dp"
+                    android:src="@drawable/ic_bookmark_green"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/ic_check_one"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/iv_poster_one"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="6.7dp"
+                    android:src="@drawable/ic_check"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_name_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_poster_one"
+                    android:layout_marginLeft="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/tv_year_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name_one"
+                    android:layout_marginLeft="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+
+            </RelativeLayout>
+
+
+            <!--two-->
+
+            <RelativeLayout
+                android:id="@+id/relLayout2"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/relLayout1">
+
+                <ImageView
+                    android:id="@+id/iv_poster_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/ic_bookmark_two"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="6.7dp"
+                    android:src="@drawable/ic_bookmark"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/ic_add_two"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/iv_poster_two"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/ic_add"
+                    android:visibility="visible" />
+
+
+                <ImageView
+                    android:id="@+id/ic_bookmark_green_two"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="6dp"
+                    android:src="@drawable/ic_bookmark_green"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/ic_check_two"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/iv_poster_two"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="6.7dp"
+                    android:src="@drawable/ic_check"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_name_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_poster_two"
+                    android:layout_marginLeft="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/tv_year_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name_two"
+                    android:layout_marginLeft="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+
+            </RelativeLayout>
+
+
+            <!--three-->
+            <RelativeLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/relLayout2">
+
+                <ImageView
+                    android:id="@+id/iv_poster_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/ic_bookmark_three"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="6.7dp"
+                    android:src="@drawable/ic_bookmark"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/ic_add_three"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/iv_poster_three"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/ic_add"
+                    android:visibility="visible" />
+
+
+                <ImageView
+                    android:id="@+id/ic_bookmark_green_three"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="6dp"
+                    android:src="@drawable/ic_bookmark_green"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/ic_check_three"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/iv_poster_three"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="6.7dp"
+                    android:src="@drawable/ic_check"
+                    android:visibility="gone" />
+
+                <TextView
+
+                    android:id="@+id/tv_name_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_poster_three"
+                    android:layout_marginLeft="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/tv_year_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name_three"
+                    android:layout_marginLeft="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:textSize="16dp"
+            android:id="@+id/tv_filmography"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@id/relOne"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:text="ALL FILMOGRAPHY"
+            android:textColor="@color/blue_500"
+            android:textStyle="bold|italic" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tv_filmography"
+            android:layout_marginTop="7.5dp"
+            android:background="@color/grey" />
+
+
+    </RelativeLayout>
+
+</merge>

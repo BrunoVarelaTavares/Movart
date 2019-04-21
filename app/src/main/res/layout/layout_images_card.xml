@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="250dp"
+    android:background="@color/greay_850">
+
+    <ImageView
+        android:layout_margin="5dp"
+        android:scaleType="fitXY"
+        android:id="@+id/imagePoster"
+        android:layout_width="180dp"
+        android:layout_height="250dp" />
+
+
+</RelativeLayout>

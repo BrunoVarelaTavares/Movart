@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_800">
+
+
+        <RelativeLayout
+            android:id="@+id/relLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+
+
+            <TextView
+                android:id="@+id/tv_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/youtube_view"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Information"
+                android:textColor="@color/white"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/linha"
+                android:layout_width="100dp"
+                android:layout_height="3dp"
+                android:layout_below="@id/tv_information"
+                android:background="@color/colorAccent" />
+
+
+            <TextView
+                android:textSize="12dp"
+                android:id="@+id/tv_title"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:text="Bruno Tavares"
+                android:layout_below="@+id/linha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:id="@+id/relLayout2"
+            android:layout_below="@+id/relLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tw_overview"
+                    android:layout_marginBottom="2dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+
+
+
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</merge>
